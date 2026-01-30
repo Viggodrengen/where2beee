@@ -53,7 +53,7 @@ export default function VendorLogin() {
 
                     <button
                         type="submit"
-                        className="w-full bg-brand-blue text-brand-black font-bold py-3 rounded-xl hover:bg-cyan-400 transition-colors"
+                        className="w-full bg-brand-blue text-brand-black font-bold py-3 rounded-xl hover:opacity-90 transition-all"
                     >
                         Access Dashboard
                     </button>

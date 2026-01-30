@@ -86,7 +86,7 @@ export function PerkModal({ isOpen, onClose, event }: PerkModalProps) {
                                         <button
                                             type="submit"
                                             disabled={status === "submitting"}
-                                            className="w-full bg-brand-blue text-brand-black font-bold py-3 rounded-xl hover:bg-cyan-400 transition-colors disabled:opacity-50"
+                                            className="w-full bg-brand-blue text-brand-black font-bold py-3 rounded-xl hover:opacity-90 transition-all disabled:opacity-50"
                                         >
                                             {status === "submitting" ? "Unlocking..." : "Get Perk"}
                                         </button>

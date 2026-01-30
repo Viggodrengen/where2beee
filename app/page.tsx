@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="min-h-screen pb-20 bg-brand-black text-brand-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 p-6 bg-brand-black/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 px-4 md:px-6 py-6 bg-brand-black/90 backdrop-blur-md">
         <div className="flex items-center gap-2 mb-6">
           <h1 className="text-3xl font-bold tracking-tighter">
             Where2<span className="text-brand-blue">Be</span>
@@ -51,13 +51,13 @@ export default function Home() {
       </header>
 
       {/* Featured Section */}
-      <section className="mt-2 pl-6">
+      <section className="mt-2 px-4 md:px-6">
         <h2 className="mb-4 text-xl font-bold tracking-tight text-white flex items-center gap-2">
           🔥 Top Picks in {selectedCity}
         </h2>
 
         {featuredEvents.length > 0 ? (
-          <div className="flex gap-4 overflow-x-auto pb-8 pr-6 snap-x snap-mandatory scrollbar-hide">
+          <div className="flex gap-4 overflow-x-auto pb-8 -mx-4 md:-mx-6 px-4 md:px-6 snap-x snap-mandatory scrollbar-hide">
             {featuredEvents.map((event) => (
               <div key={event.id} className="snap-center">
                 <EventCard
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* All Bars List */}
-      <section className="px-6">
+      <section className="px-4 md:px-6">
         <h2 className="mb-4 text-xl font-bold tracking-tight text-white">
           Alle barer i {selectedCity}
         </h2>
